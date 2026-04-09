@@ -18,7 +18,9 @@ class RecoveryRequest(BaseModel):
 @router.post("/vm")
 async def request_recovery(request: RecoveryRequest):
     # 1. task_id 생성 uuid.uuid4()
+    task_id = uuid.uuid4()
     # 2. Redis Queue에 작업 적재
+    
     # 3. 즉시 반환
     
     pass
