@@ -3,7 +3,7 @@ import subprocess
 import openstack
 import asyncio
 import json
-from functools import partial
+import uuid
 
 async def recover_vm(
 		backup_image_path: str,
